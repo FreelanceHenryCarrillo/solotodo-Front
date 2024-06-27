@@ -37,6 +37,11 @@ export const { getBlogs, createPost, setLoading } = blogSlice.actions;
 export const listBlog = (state: RootState) => state.blogs.list;
 export const loadingBlog = (state: RootState) => state.blogs.loading;
 
+/**
+ * @Method -> GET
+ * @Search -> All Blogs
+ * @Optional -> use /lib/api.ts
+ */
 export const getAllBlogs =
   () => async (dispatch: Dispatch, getState: () => RootState) => {
     try {
@@ -50,6 +55,14 @@ export const getAllBlogs =
     }
   };
 
+
+
+  /**
+ * @Method -> POST
+ * @Add -> add new Post 
+ * @Body -> BLOG interface ./TypesGlobal.ts
+ * @Optional -> use /lib/api.ts
+ */
 export const createPosts =
   (post: Blog) => async (dispatch: Dispatch, getState: () => RootState) => {
     try {

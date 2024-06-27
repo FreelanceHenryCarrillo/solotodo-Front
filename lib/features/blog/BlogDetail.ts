@@ -33,6 +33,11 @@ export const { getById, setLoading } = blogDetailSlice.actions;
 export const blogDetailSelector = (state: RootState) => state.blogDetail.blog;
 export const loadingBlogDetail = (state: RootState) => state.blogDetail.loading;
 
+/**
+ * @Method : GET
+ * @Search By ID
+ * @Optional -> use /lib/api.ts
+ */
 export const getPostById =
   (id: string) => async (dispatch: Dispatch, getState: () => RootState) => {
     try {
