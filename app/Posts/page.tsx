@@ -43,7 +43,7 @@ const page = (props: Props) => {
     type: TypeFilter
   ) => {
     if (type === TypeFilter.SELECT) setselectfilter(e.target.value);
-    if (type === TypeFilter.SEARCH) setSearchInput(e.target.value);
+    if (type === TypeFilter.SEARCH) setSearchInput(e.target.value)
   };
 
   return (
