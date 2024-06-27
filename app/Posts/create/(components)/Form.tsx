@@ -7,9 +7,8 @@ import { createPosts, loadingBlog } from "@/lib/features/blog/BlogSlice";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
-type Props = {};
 
-function Form({}: Props) {
+function Form() {
   const dispatch = useAppDispatch();
   const loading = useAppSelector(loadingBlog)
   const router = useRouter();
@@ -36,7 +35,6 @@ function Form({}: Props) {
       toast.warn("Todos los campos son obligatorios");
       return;
     }
-
     try {
       await dispatch(createPosts(blog));
       toast.success("Post creado exitosamente");

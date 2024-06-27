@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./(components)/Form";
-import BackArrow from "@/app/(components)/backArrow";
+import BackArrow from "@/app/(components)/BackArrow";
 
 type Props = {};
 

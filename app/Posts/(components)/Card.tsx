@@ -19,7 +19,7 @@ const Card = ({ blog }: CardProps) => {
     date && new Intl.DateTimeFormat("en-US", options).format(date);
 
   return (
-    <CardContent className="w-full shadow-lg  flex flex-col justify-between p-4 gap-2">
+    <CardContent className="w-full h-52 shadow-lg  flex flex-col justify-between p-4 gap-2">
       <Typography
         sx={{ fontSize: 13 }}
         className="font-thin"

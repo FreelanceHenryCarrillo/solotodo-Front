@@ -21,9 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Provider store={storeRef.current}>
-        <body>
+        <body className="overflow-hidden w-[100vw] h-[100vh] ">
           <Navbar />
-
           {children}
           <ToastContainer />
         </body>
